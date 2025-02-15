@@ -125,5 +125,10 @@ def scan_directory(directory, api_key=None):
                 log_message(f"[-] Lỗi khi quét file {file_path}: {e}")
 
 web_directory = r"/var/www/html/"
+// với service IIS thì đường dẫn là %SystemDrive%\inetpub\logs\LogFiles
+// Apache/nginx là /var/log/apache2 (Apache), /var/log/nginx (nginx)
+//Apache Tomcat là /var/log/tomcat
+//Node.js là tùy thuộc vào cấu hình của ứng dụng, ví dụ: ./logs
+//đây là api virustotal  của tôi, bạn thay api của bạn vào
 api_key = "3564892adbf14ccd8e84685841ea42b10c09c81cdca89efcc6568fd34fdd4a3b"
 scan_directory(web_directory, api_key)
