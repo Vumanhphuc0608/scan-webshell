@@ -124,6 +124,6 @@ def scan_directory(directory, api_key=None):
             except Exception as e:
                 log_message(f"[-] Lỗi khi quét file {file_path}: {e}")
 
-web_directory = r"C:\\"
+web_directory = r"/var/www/html/"
 api_key = "3564892adbf14ccd8e84685841ea42b10c09c81cdca89efcc6568fd34fdd4a3b"
 scan_directory(web_directory, api_key)
